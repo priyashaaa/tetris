@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <!-- Main Game Canvas -->
+    <canvas id="canvas" width="400" height="800"></canvas>
+
+    <!-- Side Panels -->
+    <div class="side-panels">
+      <!-- Next Shape Canvas -->
+      <canvas id="nextShapeCanvas" width="200" height="200"></canvas>
+
+      <!-- Score Canvas -->
+      <canvas id="scoreCanvas" width="200" height="200"></canvas>
+    </div>
+  </div>
+
+  <!-- Reset Button -->
+  <button onclick="resetGame()">
+    <svg height="24" width="24" viewBox="0 0 36 36">
+      <path fill="#ffffff" d="M 18,11 V 7 l -5,5 5,5 v -4 c 3.3,0 6,2.7 6,6 0,3.3 -2.7,6 -6,6 -3.3,0 -6,-2.7 -6,-6 h -2 c 0,4.4 3.6,8 8,8 4.4,0 8,-3.6 8,-8 0,-4.4 -3.6,-8 -8,-8 z"></path>
+    </svg>
+  </button>
+
+ 
+
+  <!-- Hidden Image for Rotations -->
+  <img id="image" src="rotations.png" style="display: none" />
+
+  <!-- JavaScript Files -->
+  <script src="tetris.js"></script>
+ 
+
+</body>
+</html>
